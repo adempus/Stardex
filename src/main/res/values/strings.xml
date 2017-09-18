@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Stardex</string>
+    <string name="search_title">Star Search</string>
+    <string name="search_hint">Enter a star name</string>
+    <string name="desc">Image of a queried star</string>
+</resources>
