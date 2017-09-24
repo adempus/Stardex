@@ -170,8 +170,7 @@ public class SearchResultActivity extends AppCompatActivity
 
     /**
      * StarInfoDownloader accesses methods via URL links to download basic star properties in JSON from the
-     * Astropical.space API, and images from AladinLite SkyAtlas. The data is packaged in a JSON object to 
-     * be easily parsed by the StarBuilder class to create Star objects.
+     * Astropical.space API. The JSON is parsed by the StarBuilder class to create Star objects.
      *
      * An AsyncTask is a thread separate from the activity that performs networking operations in the background
      * to prevent freezing the UI.
