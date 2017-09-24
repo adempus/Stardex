@@ -171,9 +171,8 @@ public class SearchResultActivity extends AppCompatActivity
     /**
      * StarInfoDownloader accesses methods via URL links to download basic star properties in JSON from the
      * Astropical.space API. The JSON is parsed by the StarBuilder class to create Star objects.
-     *
-     * An AsyncTask is a thread separate from the activity that performs networking operations in the background
-     * to prevent freezing the UI.
+     * An AsyncTask is a worker thread separate from the activity that performs operations in the background
+     * to prevent freezing the UI. In this case, performing network operations to retrieve data.
      *
      */
     private class StarInfoDownloader extends AsyncTask<Void, Void, JSONObject>
