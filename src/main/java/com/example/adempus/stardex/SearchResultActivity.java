@@ -28,15 +28,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class SearchResultActivity extends AppCompatActivity
 {
-    /**
-     * StarInfoDownloader accesses methods via URL to download basic star properties in JSON from the
-     * Astropical.space API, and images from AladinLite SkyAtlas. The data is packaged
-     * in a JSON object to be easily parsed by the StarBuilder class to create Star objects.
-     *
-     * AsyncTask is a thread separate from the activity that performs networking operations in the background
-     * to prevent freezing the UI.
-     */
-
     private TextView starName;
     private TextView descriptionTag;
     private TextView starData;
@@ -178,8 +169,14 @@ public class SearchResultActivity extends AppCompatActivity
     }
 
     /**
-     * This AsyncTask access the URL to download and parse JSON data on a specified star in the query.
-     * */
+     * StarInfoDownloader accesses methods via URL links to download basic star properties in JSON from the
+     * Astropical.space API, and images from AladinLite SkyAtlas. The data is packaged in a JSON object to 
+     * be easily parsed by the StarBuilder class to create Star objects.
+     *
+     * An AsyncTask is a thread separate from the activity that performs networking operations in the background
+     * to prevent freezing the UI.
+     *
+     */
     private class StarInfoDownloader extends AsyncTask<Void, Void, JSONObject>
     {
         private final String dataURLFragment1, dataURLFragment2, imgURLFragment1, imgURLFragment2;
