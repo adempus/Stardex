@@ -4,10 +4,8 @@ public class Star {
     private String name, constellationName, constellationAbbr, designation,
             hemisphere, spectralClass, luminosityClass, typeDescription;
 
-    private double solarRadius, solarMass, distanceInLY,
-            distanceInPC, appearentMag, absoluteMag,
-            luminosity, effectiveTempKelvin, rightAscension,
-            declination, radialVelocity;
+    private double solarRadius, solarMass, distanceInLY, distanceInPC, appearentMag, absoluteMag, luminosity, effectiveTempKelvin,
+                   rightAscension, declination, radialVelocity;
     private int colorValue;
     private String constellation;
     private StellarClassification stellarClass;
